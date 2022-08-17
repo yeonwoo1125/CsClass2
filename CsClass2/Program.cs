@@ -10,6 +10,13 @@ namespace CsClass2
     {
         static void Main(string[] args)
         {
+            Wanted<string> WantedString = new Wanted<string>("string");
+            Wanted<int> WantedInt = new Wanted<int>(12345);
+            Wanted<double> WantedDouble = new Wanted<double>(12.345);
+
+            Console.WriteLine(WantedString.Value);
+            Console.WriteLine(WantedDouble.Value);
+            Console.WriteLine(WantedInt.Value);
         }
     }
 }
